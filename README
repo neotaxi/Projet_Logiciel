@@ -1,0 +1,6 @@
+Sprint 1
+Afficher les stations de métros
+Selectionner la station de métro de départ et d'arrivées
+
+les stations : point(x,y), nom
+les lignes: String couleur, Liste de String (nom des stations)

@@ -48,12 +48,6 @@ import java.lang.Math.*
 	public Station get_station_voisine(Point p){
 		Station s = new Station("Init", new Point(-1000,-1000));
 		for(Station x: this.Stations){
-			System.out.println("1="+"s="+s.getNom()+" "+(Math.pow(s.getPos_station().x-p.getLocation().x,2)+Math.pow(s.getPos_station().y-p.getLocation().y,2)));
-			System.out.println("2="+"x="+x.getNom()+" "+(Math.pow(x.getPos_station().x-p.getLocation().x,2)+Math.pow(x.getPos_station().y-p.getLocation().y,2)));
-			System.out.println("p="+p.toString());
-			System.out.println("x="+x.getPos_station().toString());
-
-			System.out.println("s="+s.getPos_station().toString());
 
 			if(Math.pow(s.getPos_station().x-p.getLocation().x,2)+Math.pow(s.getPos_station().y-p.getLocation().y,2)
 			 > Math.pow(x.getPos_station().x-p.getLocation().x,2)+Math.pow(x.getPos_station().y-p.getLocation().y,2))
