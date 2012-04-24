@@ -5,12 +5,10 @@ import java.awt.Point;
 public class Station {
 	private String nom;
 	private Point Pos_station;
-	private Voie[] Ligne_Adjacentes;
 	
-	public Station(String nom,Point Pos_station, Voie[] ligne_Adjacentes) {
+	public Station(String nom,Point Pos_station) {
 		this.nom = nom;
 		this.Pos_station=Pos_station;
-		Ligne_Adjacentes = ligne_Adjacentes;
 	}
 
 	public Point getPos_station() {
@@ -27,10 +25,5 @@ public class Station {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public Voie[] getLigne_Adjacentes() {
-		return Ligne_Adjacentes;
-	}
-	public void setLigne_Adjacentes(Voie[] ligne_Adjacentes) {
-		Ligne_Adjacentes = ligne_Adjacentes;
-	}
+
 }
