@@ -5,10 +5,10 @@ import java.awt.Point;
 public class Utilisateur {
 	Point GPS;
 	boolean changementOk;
-	public Utilisateur(Point gPS, boolean changementOk) {
+	public Utilisateur(Point gPS) {
 		super();
 		GPS = gPS;
-		this.changementOk = changementOk;
+		this.changementOk = true;
 	}
 	public Point getGPS() {
 		return GPS;

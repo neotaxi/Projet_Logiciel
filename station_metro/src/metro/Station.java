@@ -25,5 +25,8 @@ public class Station {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
+	public boolean equals (Station S2) {
+		return this.nom.equals(S2.nom);
+		
+		}
 }

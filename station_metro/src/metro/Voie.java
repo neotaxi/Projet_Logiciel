@@ -5,17 +5,33 @@ import java.util.Collections;
 
 public class Voie {
 	private int numLigne;
-	private ArrayList<Portion> Itinéraire;
+	private ArrayList<Portion> Itineraire;
 	
-	public Voie(int numLigne, ArrayList<Portion> Itinéraire){
+	public int getNumLigne() {
+		return numLigne;
+	}
+
+	public void setNumLigne(int numLigne) {
+		this.numLigne = numLigne;
+	}
+
+	public ArrayList<Portion> getItinéraire() {
+		return Itineraire;
+	}
+
+	public void setItineraire(ArrayList<Portion> itineraire) {
+		Itineraire = itineraire;
+	}
+
+	public Voie(int numLigne, ArrayList<Portion> Itineraire){
 		this.numLigne=numLigne;
-		this.Itinéraire=Itinéraire;
+		this.Itineraire=Itineraire;
 	}
 
 	public Voie(int numLigne, Portion[] portions) {
 		this.numLigne=numLigne;
-		Itinéraire = new ArrayList<Portion>();
-		Collections.addAll(Itinéraire, portions); ;
+		Itineraire = new ArrayList<Portion>();
+		Collections.addAll(Itineraire, portions); ;
 	}
 
 }
